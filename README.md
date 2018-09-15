@@ -74,5 +74,5 @@ above:
 - **height**: Sets height of iframe. Default is 300
 - **fluid**: If True the iframe will be wrapped in a styled outer div set to 100%
     width. This will make the iframe expand to full width of the page (or any 
-    other container you put it in) fludily, whilst maintaining the same aspect
+    other container you put it in) fluidly, whilst maintaining the same aspect
     ratio. Default is False.
