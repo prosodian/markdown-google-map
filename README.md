@@ -2,10 +2,10 @@
 Python markdown extension for Google Maps. Should be [loaded as an extension](https://python-markdown.github.io/extensions/) 
 to the [markdown library](https://python-markdown.github.io/).
 
-###Installation:
+### Installation:
 pip install git+git://github.com/tictocs/markdown-google-map.git
 
-###Usage:
+### Usage:
 ```python
 import markdown
 
@@ -22,7 +22,7 @@ md = markdown.Markdown(extensions=[GoogleMapExtension(...config values...)])
 md.convert("[map:Central Paris]")
 ```
 
-###Markdown syntax:
+### Markdown syntax:
 It's pretty simple:
 
 ```markdown
@@ -39,7 +39,7 @@ Hey look at my map!
 </p>
 ```
 
-###Configuring:
+### Configuring:
 You will need an API Key from Google to use the Maps APIs, once obtained it can
 be configured as an environment variable:
 
@@ -60,10 +60,10 @@ my_dict = {'GOOGLE_API_KEY': 'MyGoogleAPIKey1234'}
 GoogleMapExtension(config_getter=my_dict.get)
 ```
 
-!Explicitly passing the google_api_key config param takes precedence over other
-methods of setting the API Key.
+***Explicitly passing the google_api_key config param takes precedence over other
+methods of setting the API Key.***
 
-*All other config options are optional and detailed below*
+*All other config is optional and detailed below*
 
 Config is passed through when loading the extension as with the API Key example
 above:
@@ -76,5 +76,3 @@ above:
     width. This will make the iframe expand to full width of the page (or any 
     other container you put it in) fludily, whilst maintaining the same aspect
     ratio. Default is False.
-
-
