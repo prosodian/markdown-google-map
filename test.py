@@ -82,7 +82,6 @@ class ExtensionTestCase(unittest.TestCase):
         self.assertEqual(1, len(containers))
         self.assertEqual(1, len(iframes))
 
-
     def test_api_key_pulled_from_env(self):
         conf_getter = lambda val, _: 'MYKEY' if val == 'GOOGLE_API_KEY' else ''
 
