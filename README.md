@@ -13,10 +13,11 @@ md = markdown.Markdown(extensions=["mdx_google_map"])
 md.convert("[map:Central Paris]")
 ```
 
-OR
+Or if you want to alter the config:
 
 ```python
 import markdown
+from mdx_google_map import GoogleMapExtension
 
 md = markdown.Markdown(extensions=[GoogleMapExtension(...config values...)])
 md.convert("[map:Central Paris]")
