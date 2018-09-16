@@ -36,7 +36,7 @@ Which will output:
 ```html
 <p>
 Hey look at my map!
-<iframe allowfullscreen="true" frameborder="0" height="300" src="//www.google.com/maps/embed/v1/place?key=AIzaSyD5DlGo1lo0V2Np7TxfpuNuWbWcr5TV8Sw&amp;q=City+of_London" width="500"></iframe>
+<iframe allowfullscreen="true" frameborder="0" height="300" src="//www.google.com/maps/embed/v1/place?key=AIzaSyD5DlGo1lo0V2Np7TxfpuNuWbWcr5TV8Sw&amp;q=City+of+London" width="500"></iframe>
 </p>
 ```
 
@@ -77,3 +77,16 @@ above:
     width. This will make the iframe expand to full width of the page (or any 
     other container you put it in) fluidly, whilst maintaining the same aspect
     ratio. Default is False.
+
+### Contributing
+Pull requests are welcome, though we'd be grateful if you would 
+open an issue to discuss your feature/bugfix first.
+
+To install the development dependencies locally it's:
+`$ pip install -e .[dev]`
+
+To run the tests it is just:
+`$ python -m unittest `
+
+You'll need to follow PEP8 in addition to the [Google Python Style Guide.](https://github.com/google/styleguide/blob/gh-pages/pyguide.md)
+Sensible deviations from the above will be considered.

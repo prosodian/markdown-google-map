@@ -1,14 +1,17 @@
+from os import path
 from setuptools import setup
 
-# To develop this markdown extension itself, you should install with
-# pip install -e .[dev] to get dev dependencies
+
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
+
 setup(
     name='mdx_google_map',
     description='A python Markdown extension providing Google Maps syntax',
-    long_description=(
-        'A python Markdown extension providing Google Maps syntax. '
-        'For more details visit https://github.com/tictocs/markdown-google-map'
-    ),
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Tom Manterfield @ Tic Tocs Tech',
     author_email='tom@tictocs.com',
     url='https://github.com/tictocs/markdown-google-map/',
@@ -18,7 +21,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3'
     ],
-    version='1.0.0',
+    version='1.0.1',
     py_modules=['mdx_google_map'],
     install_requires=['markdown>=2.6.11'],
     extras_require={

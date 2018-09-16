@@ -36,7 +36,7 @@ class GoogleMapExtension(Extension):
     def extendMarkdown(self, md, md_globals):
         """
         Extends markdown with inline patterns providing Google map function.
-        
+
         See base class for further info.
         """
         google_map = GoogleMapPattern(MAP_MATCH)
