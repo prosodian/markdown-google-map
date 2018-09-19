@@ -3,7 +3,7 @@ Python markdown extension for Google Maps. Should be [loaded as an extension](ht
 to the [markdown library](https://python-markdown.github.io/).
 
 ### Installation:
-pip install mdx-google-map
+`$ pip install mdx-google-map`
 
 ### Usage:
 ```python
