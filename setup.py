@@ -30,5 +30,8 @@ setup(
     project_urls={
         'Bug Reports': 'https://github.com/tictocs/markdown-google-map/issues',
         'Source': 'https://github.com/tictocs/markdown-google-map/',
-    })
-    
+    },
+    entry_points={
+        'markdown.extensions': ['mdx_google_map = mdx_google_map:GoogleMapExtension']
+    }
+)

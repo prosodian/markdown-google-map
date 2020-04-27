@@ -8,6 +8,10 @@ from mdx_google_map import GoogleMapExtension
 
 
 class ExtensionTestCase(unittest.TestCase):
+    def test_string_extension_succeeds(self):
+        md = markdown.Markdown(extensions=['mdx_google_map'])
+        md = markdown.Markdown(extensions=['mdx_google_map:GoogleMapExtension'])
+
     def test_creates_single_map(self):
         gmap_extension = GoogleMapExtension(google_api_key='KEY')
         md_output = markdown.markdown(
